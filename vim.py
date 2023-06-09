@@ -8,4 +8,4 @@ try:
     RPC.update(details=f"Editing {sys.argv[1]}",large_image='vim',large_text='vim',start=int(time()))
 except:
     pass
-os.system(f"vim {sys.argv[1]}")
+os.system(f"vim {''.join(f'{x} ' for x in sys.argv[1:])[:-1]}")
